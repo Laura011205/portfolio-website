@@ -1,0 +1,24 @@
+.social-links {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links-item {
+  margin: 1em;
+}
+
+.social-links-icon {
+  width: 1em;
+}
+
+#mail {
+  margin-left: 0;
+}
+
+#instagram {
+  margin-right: 0;
+}
