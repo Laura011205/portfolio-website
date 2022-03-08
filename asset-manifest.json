@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.bb5d1e2a.css",
-    "main.js": "/portfolio-website/static/js/main.f215a089.js",
+    "main.css": "/portfolio-website/static/css/main.6541f2e0.css",
+    "main.js": "/portfolio-website/static/js/main.a619e0b2.js",
     "static/media/me.jpg": "/portfolio-website/static/media/me.4630e48207dac82e9a25.jpg",
+    "static/media/discord-bot-img.png": "/portfolio-website/static/media/discord-bot-img.0a68e6d31d6027406b35.png",
     "static/media/instagram-icon.svg": "/portfolio-website/static/media/instagram-icon.ed7197166b2e68690e0fbc100d5e85e1.svg",
     "static/media/github-icon.svg": "/portfolio-website/static/media/github-icon.ee6c88d34b788f534620ec5373148155.svg",
     "static/media/linkedin-icon.svg": "/portfolio-website/static/media/linkedin-icon.e63f76d69a252a5a3a8ae6771bcb7fa6.svg",
@@ -10,11 +11,11 @@
     "index.html": "/portfolio-website/index.html",
     "static/media/mail-icon.svg": "/portfolio-website/static/media/mail-icon.fc31fc14f4e75ea400f396f0f726255d.svg",
     "static/media/toggle-button.svg": "/portfolio-website/static/media/toggle-button.f5ca2a61b6dd24ff2c9db5b56f079033.svg",
-    "main.bb5d1e2a.css.map": "/portfolio-website/static/css/main.bb5d1e2a.css.map",
-    "main.f215a089.js.map": "/portfolio-website/static/js/main.f215a089.js.map"
+    "main.6541f2e0.css.map": "/portfolio-website/static/css/main.6541f2e0.css.map",
+    "main.a619e0b2.js.map": "/portfolio-website/static/js/main.a619e0b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb5d1e2a.css",
-    "static/js/main.f215a089.js"
+    "static/css/main.6541f2e0.css",
+    "static/js/main.a619e0b2.js"
   ]
 }
