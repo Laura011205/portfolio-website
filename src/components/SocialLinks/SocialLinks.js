@@ -8,12 +8,12 @@ const SocialLinks = () => {
   return (
     <div className="social-links">
       <div className="social-links-item" id="mail">
-        <a href="mailto:lulaura011205@gmail.com">
+        <a href="mailto:lulaura011205@gmail.com" target="_blank">
           <img src={mailIcon} alt="mail-icon" className="social-links-icon" />
         </a>
       </div>
       <div className="social-links-item">
-        <a href="https://www.linkedin.com/in/lauralu1219/">
+        <a href="https://www.linkedin.com/in/lauralu1219/" target="_blank">
           <img
             src={linkedinIcon}
             alt="linkedin-icon"
@@ -22,7 +22,7 @@ const SocialLinks = () => {
         </a>
       </div>
       <div className="social-links-item">
-        <a href="https://github.com/Laura011205">
+        <a href="https://github.com/Laura011205" target="_blank">
           <img
             src={githubIcon}
             alt="github-icon"
@@ -31,7 +31,7 @@ const SocialLinks = () => {
         </a>
       </div>
       <div className="social-links-item" id="instagram">
-        <a href="https://www.instagram.com/laurd_l">
+        <a href="https://www.instagram.com/laurd_l" target="_blank">
           <img
             src={instagramIcon}
             alt="instagram-icon"

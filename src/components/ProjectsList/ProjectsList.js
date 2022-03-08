@@ -9,7 +9,7 @@ function ProjectsList() {
         return (
           <div key={index} className="project-card">
             <div className="project-img-container">
-              <a href={project.repo}>
+              <a href={project.repo} target="_blank">
                 <img
                   src={project.image}
                   alt={project.name}
@@ -18,12 +18,12 @@ function ProjectsList() {
               </a>
             </div>
             <div className="project-text">
-              <a href={project.repo} className="project-name">
+              <a href={project.repo} target="_blank" className="project-name">
                 {project.name}
               </a>
               <p className="project-description">{project.description}</p>
               {project.name && (
-                <a href={project.repo}>
+                <a href={project.repo} target="_blank">
                   <button className="repo-btn">Repository</button>
                 </a>
               )}

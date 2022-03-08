@@ -46,6 +46,7 @@ const MobileNavbar = () => {
           <li className="mobile-nav-item">
             <a
               href="https://drive.google.com/file/d/1Q9nc6aJ6DSRZUqxkkioWAtnvn6fgCcBK/view?usp=sharing"
+              target="_blank"
               className="mobile-nav-link"
             >
               Resume
