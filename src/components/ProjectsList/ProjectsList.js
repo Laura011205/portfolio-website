@@ -22,9 +22,11 @@ function ProjectsList() {
                 {project.name}
               </a>
               <p className="project-description">{project.description}</p>
-              <a href={project.repo}>
-                <button className="repo-btn">Repository</button>
-              </a>
+              {project.name && (
+                <a href={project.repo}>
+                  <button className="repo-btn">Repository</button>
+                </a>
+              )}
             </div>
           </div>
         );
