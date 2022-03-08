@@ -1,11 +1,15 @@
 import Navbar from "../../components/Navbar/Navbar";
+import ProjectsList from "../../components/ProjectsList/ProjectsList";
 import "./Projects.css";
+
 function Projects() {
   return (
-    <>
+    <div className="projects-page">
       <Navbar />
-      <p className="update-alert">Work in progress, check back later!</p>
-    </>
+      <div className="projects-content">
+        <ProjectsList />
+      </div>
+    </div>
   );
 }
 

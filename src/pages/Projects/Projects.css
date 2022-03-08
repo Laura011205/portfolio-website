@@ -1,5 +1,48 @@
-.update-alert {
-  color: #fff;
-  top: 50%;
-  position: absolute;
+@media screen and (min-width: 1201px) {
+  #root {
+    overflow-y: scroll;
+  }
+
+  .projects-page {
+    height: 100vh;
+    width: 75%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects-content {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .projects-page {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .projects-content {
+    margin: 0;
+    padding: 0;
+    width: 70vw;
+    height: 70%;
+  }
 }
