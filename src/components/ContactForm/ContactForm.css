@@ -61,6 +61,10 @@
   .form-btn {
     font-weight: 300;
   }
+
+  .feedback-wrapper {
+    margin-top: 1em;
+  }
 }
 
 @media screen and (min-width: 1201px) {
@@ -84,5 +88,13 @@
   .form-btn:hover {
     background-color: #6f6f6f;
     color: white;
+  }
+
+  .form-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: min-content;
   }
 }
