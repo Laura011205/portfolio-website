@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./DesktopNavbar.css";
 
 function DesktopNavbar() {
+  const location = useLocation().pathname;
+
   return (
     <>
       <nav className="nav">
@@ -14,7 +16,13 @@ function DesktopNavbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/portfolio-website" className="nav-link">
+              <Link
+                to="/portfolio-website"
+                className="nav-link"
+                style={{
+                  color: location === "/portfolio-website" && "#969696",
+                }}
+              >
                 About Me
               </Link>
             </li>
@@ -28,12 +36,25 @@ function DesktopNavbar() {
               </a>
             </li>
             <li className="nav-item">
-              <Link to="/portfolio-website/Projects" className="nav-link">
+              <Link
+                to="/portfolio-website/Projects"
+                className="nav-link"
+                style={{
+                  color:
+                    location === "/portfolio-website/Projects" && "#969696",
+                }}
+              >
                 Projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/portfolio-website/Contact" className="nav-link">
+              <Link
+                to="/portfolio-website/Contact"
+                className="nav-link"
+                style={{
+                  color: location === "/portfolio-website/Contact" && "#969696",
+                }}
+              >
                 Contact
               </Link>
             </li>

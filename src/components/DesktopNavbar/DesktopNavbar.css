@@ -30,9 +30,8 @@
   transition: all 0.3s ease-out;
 }
 
-.nav-link:hover,
-.nav-logo:hover {
-  color: #6f6f6f;
+.nav-link:hover {
+  color: #969696;
 }
 
 .nav-item {
