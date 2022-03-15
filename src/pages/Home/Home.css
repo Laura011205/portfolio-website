@@ -46,10 +46,6 @@
     width: min-content;
   }
 
-  .about-name {
-    font-weight: 600;
-  }
-
   .about-bio {
     font-weight: 300;
     font-size: small;
@@ -81,15 +77,11 @@
   .about-photo {
     width: 100%;
     height: auto;
+    margin-bottom: 1em;
   }
 
   .about-text {
     margin: 1rem;
-  }
-
-  .about-name {
-    font-weight: 600;
-    font-size: smaller;
   }
 
   .about-bio {

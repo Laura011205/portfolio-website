@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar";
+import { Typewriter } from "react-simple-typewriter";
 import me from "../../assets/me.jpg";
 import "./Home.css";
 import SocialLinks from "../../components/SocialLinks/SocialLinks";
@@ -15,7 +16,20 @@ function Home() {
         </div>
         <div className="col-1">
           <div className="about-text-container">
-            <h4 className="about-name">Laura Lu</h4>
+            <span style={{ fontWeight: "600" }}>
+              {""}
+              <Typewriter
+                words={["Laura Lu"]}
+                loop={0}
+                cursor={true}
+                cursorStyle="_"
+                typeSpeed={100}
+                deleteSpeed={90}
+                delaySpeed={2000}
+                className="about-name"
+              />
+            </span>
+
             <div className="about-text">
               <p className="about-bio">
                 Hey! My name is Laura. I am currently pursuing my BS in Computer
