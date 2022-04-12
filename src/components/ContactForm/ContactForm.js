@@ -11,27 +11,36 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_lvbka0f",
-        "template_j9smhs2",
-        form.current,
-        "yAe7lsBUa_MwYgyi_"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setFeedbackContent("Your message has been sent!");
-          setShowFeedback(true);
-        },
-        (error) => {
-          console.log(error.text);
-          setFeedbackContent("An error occurred, please try again later :(");
-          setShowFeedback(true);
-        }
-      );
+    if (
+      [...form.current.elements].filter(
+        (element) => element.value === "" && element.type !== "submit"
+      ).length === 0
+    ) {
+      emailjs
+        .sendForm(
+          "service_lvbka0f",
+          "template_j9smhs2",
+          form.current,
+          "yAe7lsBUa_MwYgyi_"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setFeedbackContent("Your message has been sent!");
+            setShowFeedback(true);
+          },
+          (error) => {
+            console.log(error.text);
+            setFeedbackContent("An error occurred, please try again later :(");
+            setShowFeedback(true);
+          }
+        );
 
-    e.target.reset();
+      e.target.reset();
+    } else {
+      setFeedbackContent("Please complete the form before submitting");
+      setShowFeedback(true);
+    }
   };
 
   const hideFeedback = () => {
